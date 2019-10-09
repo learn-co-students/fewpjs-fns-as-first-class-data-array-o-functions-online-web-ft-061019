@@ -25,7 +25,5 @@ function unleashDog(dogName, dogBreed){
 const routine = [ wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
 function exerciseDog(dogName, dogBreed){
-    for (var i = 0; i < routine.length; i++){
-        return routine.map(fn => fn(dogName, dogBreed))
-    }
+    return routine.map(fn => fn(dogName, dogBreed))
 }
